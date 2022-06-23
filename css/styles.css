@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lobster&display=swap');
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.intro-container {
+    background-color: #E3FDFD;
+    height: 88vh;
+    position: relative;
+    padding-top: 100px;
+}
+.intro-name {
+    font-family: 'Lobster', Helvetica, Arial, sans-serif;
+    font-size: xxx-large;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 35%;
+    bottom: 55%;
+}
+
+.mountain {
+    position: relative;
+    top: 26.5%;
+}
+
+.about-container {
+    background-color: #71C9CE;
+    height: 100vh;
+}
+
+.bottom-container {
+    background-color: #CBF1F5;
+    height: 100vh;
+}
