@@ -8,6 +8,8 @@ Truth is...I kinda rushed the learning process of front end development. So much
 
 This doesn't mean my code is necessarily bad, but I know I can do so much better and in a way that would produce an end result that I'm happy with.
 
+Basically, I overengineered and it hurt my brain, realized I coulda just done it with the basics no problem.
+
 ## Stack
 
 1. HTML
