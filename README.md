@@ -1,4 +1,4 @@
-#Personal Site V2
+# Personal Site V2
 This is the second version of my site that is meant to display my work
 
 Now if you're someone who has seen this before, you might be asking "why are you making a second version?"
@@ -9,6 +9,6 @@ This doesn't mean my code is necessarily bad, but I know I can do so much better
 
 Basically, I overengineered and it hurt my brain, realized I coulda just done it with the basics no problem.
 
-#Stack
+# Stack
 React
 Bulma
