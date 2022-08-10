@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.link-logo {
+  padding-left:2px;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  padding-top: 42%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('./images/intro-background.svg')
+}
+
+.welcome-container {
+  height: 30vh;
+  width: 90%;
+  padding-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+}
+
+.welcome-text-1 {
+  font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
+}
+
+.welcome-text-2 {
+  font-size: calc(5rem + ((1vw - 7.68px) * 5.555555555555555));
+}
+
+.animated-text-1 {
+  font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
+}
