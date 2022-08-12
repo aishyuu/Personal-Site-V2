@@ -1,5 +1,6 @@
 import Navigation from "./components/navigation/navigation"
-import Welcome from "./components/navigation/welcome";
+import Welcome from "./components/welcome";
+import About from "./components/about";
 import "./index.css"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navigation />
       <Welcome />
       <div className="spacer layer1" />
+      <About />
     </div>
   );
 }

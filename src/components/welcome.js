@@ -1,4 +1,4 @@
-import "../../index.css"
+import "../index.css"
 import Typewriter from 'typewriter-effect'
 import Icon from "@mdi/react"
 import { mdiGithub } from '@mdi/js';
