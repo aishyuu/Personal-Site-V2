@@ -48,7 +48,7 @@ code {
 
 .about-container {
   background-color: #392759;
-  height: 96vh;
+  height: 80vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -75,7 +75,36 @@ code {
   margin: 10% auto 0 auto;
 }
 
+.sidebar-container {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+}
+
+.links-list-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 750px) {
+  .about-container {
+    height: 105vh;
+  }
+
   .about-content {
     width: 90%;
     padding-top: 3%;
@@ -90,5 +119,15 @@ code {
     padding-right: 0;
     height: 200px;
     width: 200px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .welcome-container {
+    height: 45vh;
+  }
+
+  .about-container {
+    height: 140vh;
   }
 }
