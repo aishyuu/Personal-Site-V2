@@ -45,6 +45,7 @@ function SideInfo() {
                     </a>
                 </li>
             </ul>
+            <div id="rectangle"></div>
         </div>
     )
 }
