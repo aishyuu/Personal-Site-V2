@@ -26,7 +26,11 @@ code {
 }
 
 .layer1 {
-  background-image: url('./images/intro-background.svg')
+  background-image: url('./images/intro-background.svg');
+}
+
+.layer2 {
+  background-image: url('./images/projects-transition.svg');
 }
 
 .welcome-container {
@@ -48,7 +52,7 @@ code {
 
 .about-container {
   background-color: #392759;
-  height: 80vh;
+  height: 40vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -103,6 +107,22 @@ code {
   z-index: 10;
 }
 
+.profile {
+  border-radius: 100%;
+}
+
+.technologies-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-container {
+    height: 70vh;
+  }
+}
+
 @media only screen and (max-width: 1080px) {
   .sidebar-container {
     display: none;
@@ -111,7 +131,7 @@ code {
 
 @media only screen and (max-width: 750px) {
   .about-container {
-    height: 105vh;
+    height: 94vh;
   }
 
   .about-content {
@@ -131,12 +151,22 @@ code {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .welcome-container {
+    height: 45vh;
+  }
+
+  .about-container {
+    height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .welcome-container {
     height: 45vh;
   }
 
   .about-container {
-    height: 140vh;
+    height: 135vh;
   }
 }

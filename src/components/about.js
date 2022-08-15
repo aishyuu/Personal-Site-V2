@@ -22,6 +22,15 @@ function About() {
                 <p className="content-text">In recent times however, I've been messing around with general programming and landed with a passion in making awesome things in the web.</p>
                 <br />
                 <p className="content-text">As of mid April, it has been {timeLearning} months since I've started my web dev journey and I've learned so much, take a look!</p>
+                <br />
+                <p className="content-text">Technologies I have recently worked with: </p>
+                <ul className="technologies-list">
+                    <li className="technology-item">JavaScript (ES6+)</li>
+                    <li className="technology-item">React</li>
+                    <li className="technology-item">Node.js</li>
+                    <li className="technology-item">Express.js</li>
+                    <li className="technology-item">MongoDB</li>
+                </ul>
             </div>
             <div className="about-profile">
                 <img src={profile} className="profile" height="300" width="300" alt="profile" />

@@ -12,6 +12,7 @@ function App() {
       <Welcome />
       <div className="spacer layer1" />
       <About />
+      <div className="spacer layer2" />
     </div>
   );
 }
