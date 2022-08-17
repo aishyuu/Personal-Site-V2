@@ -250,7 +250,72 @@ code {
 }
 
 .project-image-container {
-  grid-area: 1 / 6 / -1 / 1;
+  grid-area: 1 / 1 / 4 / -5;
   position: relative;
   z-index: 1;
+}
+
+.mini-featured-projects-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mini-featured-projects-item {
+  margin-bottom: 70px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.mini-project-item-content {
+  grid-column: 1 / -1;
+  grid-area: 1 / 1 / -1 / -1;
+  padding: 40px 40px 30px;
+  text-align: left;
+  color: white;
+  z-index: 2;
+}
+
+.mini-project-overline {
+  margin: 10px 0px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.mini-project-title {
+  margin: 0px 0px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mini-project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.mini-project-tech-item {
+  margin: 0px 10px 5px 0px;
+}
+
+.mini-project-image-container {
+  position: relative;
+  grid-area: 1 / 1 / -1 / -1;
+  height: 100%;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+.mini-project-image {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+  filter: grayscale(100%) contrast(1) brightness(50%);
 }
