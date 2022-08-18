@@ -131,7 +131,7 @@ code {
 
 @media only screen and (max-width: 750px) {
   .about-container {
-    height: 94vh;
+    height: auto;
   }
 
   .about-content {
@@ -154,10 +154,6 @@ code {
 @media only screen and (max-width: 400px) {
   .welcome-container {
     height: 45vh;
-  }
-
-  .about-container {
-    height: 100vh;
   }
 }
 
