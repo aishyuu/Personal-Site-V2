@@ -5,5 +5,19 @@
         "Project_Tech_List": ["React", "Node.js", "Express.js", "MongoDB"],
         "Image": "images/waToDo.png",
         "Links": ["https://shielded-basin-88693.herokuapp.com/","https://github.com/aishyuu/WaToDo", "https://imatiasc.blogspot.com/2022/07/fullstack-todo-list.html"]
+    },
+    {
+        "Project_Title": "Gericht",
+        "Project_Description": "A frontend project where I took a UI/UX design and implemented it using the React Framework. Frontend styling project only (no functionality outside main page).",
+        "Project_Tech_List": ["HTML", "CSS", "React"],
+        "Image": "images/Gericht.png",
+        "Links": ["https://aishyuu.github.io/Restaurant-UI-UX/", "https://github.com/aishyuu/Restaurant-UI-UX", "https://imatiasc.blogspot.com/2022/06/restaurant-ui-copy.html"]
+    },
+    {
+        "Project_Title": "Feather Weather",
+        "Project_Description": "A frontend weather app that uses OpenWeather API to give details on the current weather, the weather in the next few hours, and the weather in the next few days. The app also uses an autocorrect api to give cities that works.",
+        "Project_Tech_List": ["HTML", "Bootstrap", "React", "Weather API"],
+        "Image": "images/FeatherWeather.png",
+        "Links": ["https://aishyuu.github.io/feather-weather/", "https://github.com/aishyuu/feather-weather", "https://imatiasc.blogspot.com/2022/05/feather-weather-part-3.html"]
     }
 ]

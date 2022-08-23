@@ -4,12 +4,10 @@ import FeaturedProjectFull from './featured_project_full';
 import FeaturedProjectMini from './featured_project_mini';
 
 function FeaturedProjects() {
-    console.log(Project_Set);
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1080);
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 1080);
-        console.log(isDesktop);
     };
 
     useEffect(() => {
@@ -31,6 +29,7 @@ function FeaturedProjects() {
                                 project_description = {project.Project_Description}
                                 tech_stack = {project.Project_Tech_List}
                                 image = {project.Image}
+                                links = {project.Links}
                             />
                         ))}
                     </ul>
@@ -42,6 +41,7 @@ function FeaturedProjects() {
                                 project_description = {project.Project_Description}
                                 tech_stack = {project.Project_Tech_List}
                                 image = {project.Image}
+                                links = {project.Links}
                             />
                         ))}
                     </ul>

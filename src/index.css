@@ -117,60 +117,10 @@ code {
   -moz-columns: 2;
 }
 
-@media only screen and (max-width: 1200px) {
-  .about-container {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 1080px) {
-  .sidebar-container {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .about-container {
-    height: auto;
-  }
-
-  .about-content {
-    width: 90%;
-    padding-top: 3%;
-    font-size: 0.8rem;
-  }
-
-  .header-text {
-    font-size: 1.5rem;
-  }
-
-  .about-profile {
-    padding-right: 0;
-    height: 200px;
-    width: 200px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .welcome-container {
-    height: 45vh;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .welcome-container {
-    height: 45vh;
-  }
-
-  .about-container {
-    height: 135vh;
-  }
-}
-
 .featured-projects-container {
   background-color: #F7ACCF;
   color: black;
-  height: 100vh;
+  height: 200vh;
 }
 
 .featured-projects-content {
@@ -203,6 +153,7 @@ code {
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .project-item-content {
@@ -314,4 +265,84 @@ code {
   width: auto;
   height: 100%;
   filter: grayscale(100%) contrast(1) brightness(50%);
+}
+
+.project-links {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.project-link-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project-links-mini {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-container {
+    height: 70vh;
+  }
+
+  .featured-projects-container {
+    height: 150vh;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .sidebar-container {
+    display: none;
+  }
+
+  .featured-projects-container {
+    height: 190vh;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .about-container {
+    height: auto;
+  }
+
+  .about-content {
+    width: 90%;
+    padding-top: 3%;
+    font-size: 0.8rem;
+  }
+
+  .header-text {
+    font-size: 1.5rem;
+  }
+
+  .about-profile {
+    padding-right: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  .featured-projects-container {
+    height: 170vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .welcome-container {
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .welcome-container {
+    height: 45vh;
+  }
+
+  .about-container {
+    height: 135vh;
+  }
 }
