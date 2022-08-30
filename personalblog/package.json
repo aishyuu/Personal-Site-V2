@@ -1,0 +1,36 @@
+{
+  "name": "personalblog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is the second version of my site that is meant to display my work",
+  "main": "package.json",
+  "author": "Aiyu <ivanmatias1331@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.31.1",
+    "@sanity/core": "^2.31.1",
+    "@sanity/default-layout": "^2.31.1",
+    "@sanity/default-login": "^2.31.1",
+    "@sanity/desk-tool": "^2.31.1",
+    "@sanity/eslint-config-studio": "^2.0.0",
+    "@sanity/vision": "^2.31.1",
+    "eslint": "^8.6.0",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "sanity-plugin-markdown": "^2.1.1",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aishyuu/Personal-Site-V2.git"
+  }
+}
