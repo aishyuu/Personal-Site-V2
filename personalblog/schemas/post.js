@@ -28,7 +28,7 @@ export default {
       type: 'string'
     },
     {
-      name: 'mainImage',
+      name: 'main_image',
       title: 'Main image',
       type: 'image',
       options: {
@@ -36,7 +36,7 @@ export default {
       },
     },
     {
-      name: 'publishedAt',
+      name: 'published_at',
       title: 'Published at',
       type: 'date',
     },

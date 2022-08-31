@@ -285,6 +285,39 @@ code {
   justify-content: flex-start;
 }
 
+.blog_landing {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blog_content {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 100px 150px;
+}
+
+.blog_heading {
+  font-weight: 600;
+  color:#0a192f;
+  line-height: 1.1;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.blog_subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 @media only screen and (max-width: 1200px) {
   .about-container {
     height: 70vh;
