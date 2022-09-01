@@ -313,6 +313,32 @@ code {
   padding-bottom: 50px;
 }
 
+.table_year {
+  width: 15%;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.table_name {
+  width: 20%;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.table_type {
+  width: 15%;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.table_built {
+  width: 40%;
+}
+
+.table_link{
+  padding-right: 15px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

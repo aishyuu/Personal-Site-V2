@@ -2,6 +2,8 @@ import Navigation from "../components/navigation/navigation"
 import sanityClient from "../client";
 import { useEffect, useState } from "react";
 import SideInfo from '../components/sideInfo'
+import Icon from '@mdi/react'
+import { mdiArrowBottomRightBoldBox, mdiGithub } from '@mdi/js'
 
 function Blog() {
     const [projects, setProjects] = useState(null);
@@ -54,7 +56,7 @@ function Blog() {
                                 <tr>
                                     <th>Date</th>
                                     <th>Project</th>
-                                    <th classname="blog_desktop">Status</th>
+                                    <th classname="blog_desktop">Type</th>
                                     <th className="blog_desktop">Built With</th>
                                     <th>Link</th>
                                 </tr>
@@ -66,6 +68,39 @@ function Blog() {
                                 </tr>
                             )}
                     </thead>
+                        {isDesktop ? (
+                            projects &&
+                                projects.map((row) => (
+                                    <tr>
+                                        <td className="table_year">{row["published_at"]}</td>
+                                        <td className="table_name">{row["title"]}</td>
+                                        <td className="table_type">{row["type"]}</td>
+                                        <td className="table_built">{row["tech_stack"]}</td>
+                                        <td className="links">
+                                            <div>
+                                                <a className="table_link" href={row["site_link"]} target="_blank" rel="noreferrer">
+                                                    <Icon path={mdiArrowBottomRightBoldBox}
+                                                        title="site link"
+                                                        size={1}
+                                                        color="black"
+                                                    />
+                                                </a>
+                                                <a  className="table_link" href={row["github_link"]} target="_blank" rel="noreferrer">
+                                                    <Icon path={mdiGithub}
+                                                        title="github link"
+                                                        size={1}
+                                                        color="black"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))
+                        ) : (
+                            projects.map((row) => (
+                                <td>{row["title"]}</td>
+                            )) 
+                        )}
                 </table>
             </div>
         </div>
