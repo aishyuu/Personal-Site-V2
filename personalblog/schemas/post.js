@@ -62,6 +62,16 @@ export default {
     }
   ],
 
+  orderings: [
+    {
+      title: 'Release Date, New',
+      name: 'defaultDateSort',
+      by: [
+        {field: 'published_at', direction: 'desc'}
+      ]
+    }
+  ],
+
   preview: {
     select: {
       title: 'title',
@@ -69,7 +79,7 @@ export default {
       media: 'mainImage',
     },
     prepare(selection) {
-      const {author} = selection
+      const author = selection.ordering === 'defaultDateSort'
       return Object.assign({}, selection, {
         subtitle: author && `by ${author}`,
       })
