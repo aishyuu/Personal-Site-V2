@@ -22,6 +22,7 @@ function Blog() {
         sanityClient
             .fetch(
                 `*[_type == "post"]{
+                    projectNumber,
                     title,
                     url_ending,
                     type,
@@ -70,7 +71,7 @@ function Blog() {
                     </thead>
                         {isDesktop ? (
                             projects &&
-                                projects.map((row) => (
+                                projects.sort((firstItem, secondItem) => secondItem.projectNumber - firstItem.projectNumber).map((row) => (
                                     <tr>
                                         <td className="table_year">{row["published_at"]}</td>
                                         <td className="table_name">{row["title"]}</td>

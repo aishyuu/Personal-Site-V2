@@ -9,6 +9,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'project_number',
+      title: 'Project Number',
+      type: 'number',
+    },
+    {
       name: 'url_ending',
       title: 'Url Ending',
       type: 'slug',
@@ -64,7 +69,7 @@ export default {
 
   orderings: [
     {
-      title: 'Release Date, New',
+      title: 'Release Date',
       name: 'defaultDateSort',
       by: [
         {field: 'published_at', direction: 'desc'}
@@ -75,11 +80,11 @@ export default {
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
+      date: 'published_at',
       media: 'mainImage',
     },
     prepare(selection) {
-      const author = selection.ordering === 'defaultDateSort'
+      const {author} = selection.orderings === "projectNumber"
       return Object.assign({}, selection, {
         subtitle: author && `by ${author}`,
       })
