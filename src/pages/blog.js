@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import SideInfo from '../components/sideInfo'
 import Icon from '@mdi/react'
 import { mdiArrowBottomRightBoldBox, mdiGithub } from '@mdi/js'
+import { Link } from "react-router-dom";
 
 function Blog() {
     const [projects, setProjects] = useState(null);
@@ -74,7 +75,11 @@ function Blog() {
                                 projects.sort((firstItem, secondItem) => secondItem.project_number - firstItem.project_number).map((row) => (
                                     <tr>
                                         <td className="table_year">{row["published_at"]}</td>
-                                        <td className="table_name">{row["title"]}</td>
+                                        <td className="table_name">
+                                            <Link to={"/" + row.url_ending.current} key={row.url_ending.current}> 
+                                                {row["title"]} 
+                                            </Link>
+                                        </td>
                                         <td className="table_type">{row["type"]}</td>
                                         <td className="table_built">{row["tech_stack"]}</td>
                                         <td className="links">

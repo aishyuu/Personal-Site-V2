@@ -5,6 +5,7 @@
   "dependencies": {
     "@mdi/js": "^7.0.96",
     "@mdi/react": "^1.6.1",
+    "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.3.6",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.5",

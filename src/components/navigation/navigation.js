@@ -22,9 +22,6 @@ function Navigation() {
             </div>
             <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                 <div className="navbar-start">
-                    <Link to="/projects" className="navbar-item">
-                        Projects
-                    </Link>
 
                     <Link to="/blog" className="navbar-item">
                         Blog
