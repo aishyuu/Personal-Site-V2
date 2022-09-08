@@ -344,6 +344,32 @@ table {
   border-collapse: collapse;
 }
 
+.mini_table_year {
+  width: 200px;
+}
+
+.mini_table_name {
+  width: 400px;
+}
+
+.contact_me_full {
+  display: none;
+  background-color: #F7ACCF;
+  padding-bottom: 20px;
+}
+
+.contact_me_content {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_me_icon {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @media only screen and (max-width: 1200px) {
   .about-container {
     height: 70vh;
@@ -361,6 +387,10 @@ table {
 
   .featured-projects-container {
     height: 190vh;
+  }
+
+  .contact_me_full {
+    display: block;
   }
 }
 

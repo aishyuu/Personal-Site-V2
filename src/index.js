@@ -15,9 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />} />
+            <Route path="/" element={<App />} exact />
             <Route path="/blog" element={<Blog />} />
-            <Route path='/:slug' element={<SinglePost/>} />
+            <Route path='/post/:slug' element={<SinglePost/>} />
         </Routes>
     </BrowserRouter>
 );

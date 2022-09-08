@@ -4,6 +4,7 @@ import About from "./components/about";
 import SideInfo from "./components/sideInfo";
 import FeaturedProjects from "./components/featured_projects";
 import "./index.css"
+import ContactMe from "./components/contactMe";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <div className="spacer layer2" />
       <FeaturedProjects />
+      <ContactMe />
     </div>
   );
 }

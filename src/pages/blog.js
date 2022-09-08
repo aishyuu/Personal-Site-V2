@@ -43,8 +43,7 @@ function Blog() {
             .then((data) => setProjects(data))
             .catch(console.error);
     }, []);
-    
-    console.log(projects);
+
     return(
         <div className="blog_landing">
             <Navigation />
@@ -76,7 +75,7 @@ function Blog() {
                                     <tr>
                                         <td className="table_year">{row["published_at"]}</td>
                                         <td className="table_name">
-                                            <Link to={"/" + row.url_ending.current} key={row.url_ending.current}> 
+                                            <Link to={"/post/" + row.url_ending.current} key={row.url_ending.current}> 
                                                 {row["title"]} 
                                             </Link>
                                         </td>
@@ -103,8 +102,34 @@ function Blog() {
                                     </tr>
                                 ))
                         ) : (
-                            projects.map((row) => (
-                                <td>{row["title"]}</td>
+                            projects &&
+                            projects.sort((firstItem, secondItem) => secondItem.project_number - firstItem.project_number).map((row) => (
+                                <tr>
+                                    <td className="mini_table_year">{row["published_at"]}</td>
+                                    <td className="mini_table_name">
+                                        <Link to={"/post/" + row.url_ending.current} key={row.url_ending.current}> 
+                                            {row["title"]} 
+                                        </Link>
+                                    </td>
+                                    <td className="links">
+                                        <div>
+                                            <a className="table_link" href={row["site_link"]} target="_blank" rel="noreferrer">
+                                                <Icon path={mdiArrowBottomRightBoldBox}
+                                                    title="site link"
+                                                    size={1}
+                                                    color="black"
+                                                />
+                                            </a>
+                                            <a  className="table_link" href={row["github_link"]} target="_blank" rel="noreferrer">
+                                                <Icon path={mdiGithub}
+                                                    title="github link"
+                                                    size={1}
+                                                    color="black"
+                                                />
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
                             )) 
                         )}
                 </table>
