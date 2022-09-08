@@ -123,6 +123,10 @@ code {
   height: 200vh;
 }
 
+.contact_me_home {
+  background-color: #F7ACCF;
+}
+
 .featured-projects-content {
   width: 80%;
   margin-left: auto;
@@ -342,6 +346,7 @@ code {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 100px;
 }
 
 .mini_table_year {
@@ -354,7 +359,6 @@ table {
 
 .contact_me_full {
   display: none;
-  background-color: #F7ACCF;
   padding-bottom: 20px;
 }
 

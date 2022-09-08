@@ -5,6 +5,7 @@ import SideInfo from '../components/sideInfo'
 import Icon from '@mdi/react'
 import { mdiArrowBottomRightBoldBox, mdiGithub } from '@mdi/js'
 import { Link } from "react-router-dom";
+import ContactMe from "../components/contactMe";
 
 function Blog() {
     const [projects, setProjects] = useState(null);
@@ -133,6 +134,7 @@ function Blog() {
                             )) 
                         )}
                 </table>
+                <ContactMe />
             </div>
         </div>
     )

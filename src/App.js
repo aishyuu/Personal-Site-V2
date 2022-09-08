@@ -16,7 +16,9 @@ function App() {
       <About />
       <div className="spacer layer2" />
       <FeaturedProjects />
-      <ContactMe />
+      <div className="contact_me_home">
+        <ContactMe />
+      </div>
     </div>
   );
 }
