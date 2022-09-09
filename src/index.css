@@ -374,6 +374,18 @@ table {
   padding-right: 30px;
 }
 
+.single_post_header {
+  font-size: xxx-large;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.single_post_content {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+
 @media only screen and (max-width: 1200px) {
   .about-container {
     height: 70vh;

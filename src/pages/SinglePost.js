@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import sanityClient from '../client'
 import Navigation from '../components/navigation/navigation'
+import Markdown from 'markdown-to-jsx'
+import ContactMe from '../components/contactMe'
+import SideInfo from '../components/sideInfo'
 
 
 export default function SinglePost() {
@@ -36,9 +39,14 @@ export default function SinglePost() {
     return(
         <div>
             <Navigation />
-            <div>
-                <h2>{singlePost.title}</h2>
+            <SideInfo />
+            <div className="single_post_header">
+                <h1>{singlePost.title}</h1>
             </div>
+            <div className="single_post_content">
+                <Markdown>{singlePost.body}</Markdown>
+            </div>
+            <ContactMe />
         </div>
     )
 }
