@@ -29,7 +29,7 @@ function Navigation() {
                 </div>
                 <div className="navbar-end">
                     <div className='navbar-item'>
-                        <a className="button is-link" href="https://github.com/aishyuu" target="_blank" rel="noreferrer">
+                        <a className="button is-link" href="https://github.com/aishyuu/Personal-Site-V2" target="_blank" rel="noreferrer">
                             Source
                             <Icon path={mdiGithub}
                                 title="Github"
