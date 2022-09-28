@@ -26,7 +26,7 @@ function Blog() {
                 `*[_type == "post"]{
                     project_number,
                     title,
-                    url_ending,
+                    slug,
                     type,
                     tech_stack,
                     main_image{
@@ -77,7 +77,7 @@ function Blog() {
                                         <tr key={i}>
                                             <td className="table_year">{row["published_at"]}</td>
                                             <td className="table_name">
-                                                <Link to={"/post/" + row.url_ending.current} key={row.url_ending.current}> 
+                                                <Link to={"/post/" + row.slug.current} key={row.slug.current}> 
                                                     {row["title"]} 
                                                 </Link>
                                             </td>
@@ -110,7 +110,7 @@ function Blog() {
                                 <tr>
                                     <td className="mini_table_year">{row["published_at"]}</td>
                                     <td className="mini_table_name">
-                                        <Link to={"/post/" + row.url_ending.current} key={row.url_ending.current}> 
+                                        <Link to={"/post/" + row.slug.current} key={row.slug.current}> 
                                             {row["title"]} 
                                         </Link>
                                     </td>

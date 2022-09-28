@@ -14,8 +14,8 @@ export default {
       type: 'number',
     },
     {
-      name: 'url_ending',
-      title: 'Url Ending',
+      name: 'slug',
+      title: 'Slug',
       type: 'slug',
       options: {
         source: 'title',
