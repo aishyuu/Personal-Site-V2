@@ -12,7 +12,8 @@ export default function SinglePost() {
     const { slug } = useParams();
 
     useEffect(() => {
-            sanityClient.fetch(`*[slug.current == "${slug}"]{
+            sanityClient
+            .fetch(`*[slug.current == "${slug}"]{
                 title,
                 type,
                 tech_stack,
@@ -28,8 +29,11 @@ export default function SinglePost() {
                 github_link
             }`
         )
-        .then((data) => setSinglePost(data[0]))
+        .then((data) => {
+            console.log(data)
+            setSinglePost(data[0])})
         .catch(console.error);
+   
     }, [slug])
 
     console.log(singlePost);

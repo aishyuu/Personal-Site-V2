@@ -58,7 +58,7 @@ function Blog() {
                                 <tr>
                                     <th>Date</th>
                                     <th>Project</th>
-                                    <th classname="blog_desktop">Type</th>
+                                    <th className="blog_desktop">Type</th>
                                     <th className="blog_desktop">Built With</th>
                                     <th>Link</th>
                                 </tr>
@@ -72,35 +72,37 @@ function Blog() {
                     </thead>
                         {isDesktop ? (
                             projects &&
-                                projects.sort((firstItem, secondItem) => secondItem.project_number - firstItem.project_number).map((row) => (
-                                    <tr>
-                                        <td className="table_year">{row["published_at"]}</td>
-                                        <td className="table_name">
-                                            <Link to={"/post/" + row.url_ending.current} key={row.url_ending.current}> 
-                                                {row["title"]} 
-                                            </Link>
-                                        </td>
-                                        <td className="table_type">{row["type"]}</td>
-                                        <td className="table_built">{row["tech_stack"]}</td>
-                                        <td className="links">
-                                            <div>
-                                                <a className="table_link" href={row["site_link"]} target="_blank" rel="noreferrer">
-                                                    <Icon path={mdiArrowBottomRightBoldBox}
-                                                        title="site link"
-                                                        size={1}
-                                                        color="black"
-                                                    />
-                                                </a>
-                                                <a  className="table_link" href={row["github_link"]} target="_blank" rel="noreferrer">
-                                                    <Icon path={mdiGithub}
-                                                        title="github link"
-                                                        size={1}
-                                                        color="black"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                projects.sort((firstItem, secondItem) => secondItem.project_number - firstItem.project_number).map((row, i) => (
+                                    <tbody>
+                                        <tr key={i}>
+                                            <td className="table_year">{row["published_at"]}</td>
+                                            <td className="table_name">
+                                                <Link to={"/post/" + row.url_ending.current} key={row.url_ending.current}> 
+                                                    {row["title"]} 
+                                                </Link>
+                                            </td>
+                                            <td className="table_type">{row["type"]}</td>
+                                            <td className="table_built">{row["tech_stack"]}</td>
+                                            <td className="links">
+                                                <div>
+                                                    <a className="table_link" href={row["site_link"]} target="_blank" rel="noreferrer">
+                                                        <Icon path={mdiArrowBottomRightBoldBox}
+                                                            title="site link"
+                                                            size={1}
+                                                            color="black"
+                                                        />
+                                                    </a>
+                                                    <a  className="table_link" href={row["github_link"]} target="_blank" rel="noreferrer">
+                                                        <Icon path={mdiGithub}
+                                                            title="github link"
+                                                            size={1}
+                                                            color="black"
+                                                        />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 ))
                         ) : (
                             projects &&

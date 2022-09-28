@@ -291,7 +291,7 @@ code {
 
 .blog_landing {
   height: 100vh;
-  overflow: hidden;
+  overflow: auto
 }
 
 .blog_content {
@@ -299,7 +299,8 @@ code {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 100px 150px;
+  padding: 100px 80px;
+  overflow-y: auto;
 }
 
 .blog_heading {
