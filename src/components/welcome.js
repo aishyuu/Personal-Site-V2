@@ -41,6 +41,9 @@ function Welcome() {
                         className="link-logo"
                     />
                 </a>
+                <a className="button is-info" href="https://ivanmatias.netlify.app/blog">
+                    Blog
+                </a>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@
         "Project_Description": "A fullstack web app that visualizes all the frame data for the character Bridget from Guilty Gear Strive",
         "Project_Tech_List": ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
         "Image": "images/ProjectBrisket.png",
-        "Links": ["https://aishyuu.github.io/project-brisket/","https://github.com/aishyuu/project-brisket", "https://imatiasc.blogspot.com/2022/07/fullstack-todo-list.html"]
+        "Links": ["https://aishyuu.github.io/project-brisket/","https://github.com/aishyuu/project-brisket", "https://ivanmatias.netlify.app/post/project-brisket"]
     },
     {
         "Project_Title": "Commerce",
