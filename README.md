@@ -1,6 +1,8 @@
 # Personal Site V2
 This is the second version of my site that is meant to display my work
 
+[Site is live here](https://ivanmatias.netlify.app/)
+
 Now if you're someone who has seen this before, you might be asking "why are you making a second version?"
 
 Truth is...I kinda rushed the learning process of front end development. So much so that my foundations were extremely shakey.
