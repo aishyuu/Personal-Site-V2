@@ -1,23 +1,23 @@
 [
     {
+        "Project_Title": "Notify",
+        "Project_Description": "A fullstack local storage note taking app with folder system and full markdown support",
+        "Project_Tech_List": ["TypeScript", "React", "Vite", "Tailwind CSS"],
+        "Image": "images/notify.png",
+        "Links": ["https://notify-five.vercel.app/","https://github.com/aishyuu/notify", "https://ivanmatias.netlify.app/blog"]
+    },
+    {
         "Project_Title": "Project Brisket",
         "Project_Description": "A fullstack web app that visualizes all the frame data for the character Bridget from Guilty Gear Strive",
-        "Project_Tech_List": ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
+        "Project_Tech_List": ["React", "Tailwind CSS"],
         "Image": "images/ProjectBrisket.png",
         "Links": ["https://aishyuu.github.io/project-brisket/","https://github.com/aishyuu/project-brisket", "https://ivanmatias.netlify.app/post/project-brisket"]
     },
     {
-        "Project_Title": "Commerce",
-        "Project_Description": "An ebay-like website that allows users to post auction listings, place bids on listings, comment on listings, and add listings to a wishlist.",
-        "Project_Tech_List": ["HTML", "CSS", "Django"],
-        "Image": "images/commerce.png",
-        "Links": ["/", "https://github.com/aishyuu/commerce" ,"/"]
-    },
-    {
-        "Project_Title": "Alphabet Soup",
-        "Project_Description": "How well do you know your keyboard?",
-        "Project_Tech_List": ["HTML", "CSS", "Bootstrap", "React"],
-        "Image": "images/alphabet.png",
-        "Links": ["https://aishyuu.github.io/alphabet-soup/", "https://github.com/aishyuu/alphabet-soup", "/"]
+        "Project_Title": "Etch-A-Sketch",
+        "Project_Description": "The classic toy in website form!",
+        "Project_Tech_List": ["HTML", "CSS", "JavaScript"],
+        "Image": "images/Etch-A-Sketch.png",
+        "Links": ["https://aishyuu.github.io/Etch-A-Sketch/", "https://github.com/aishyuu/Etch-A-Sketch", "https://ivanmatias.netlify.app/blog"]
     }
 ]
